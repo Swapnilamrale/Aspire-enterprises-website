@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aspire Enterprises supplies industrial lubricants, metalworking fluids, cutting oils, hydraulic oils and industrial cleaning solutions.">
+  <title>Aspire Enterprises | Industrial Lubricants & Metalworking Fluids</title>
+  <style>
+    :root { --navy:#142b3a; --navy2:#203f52; --gold:#e5ad43; --cream:#f5f7f8; --ink:#24333d; --muted:#63727c; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; font-family:Arial, Helvetica, sans-serif; color:var(--ink); line-height:1.6; }
+    a { color:inherit; }
+    .container { width:min(1120px, 92%); margin:auto; }
+    header { background:var(--navy); color:white; position:sticky; top:0; z-index:10; box-shadow:0 3px 12px #0002; }
+    .nav { min-height:76px; display:flex; align-items:center; justify-content:space-between; gap:20px; }
+    .brand { font-weight:800; letter-spacing:.06em; font-size:1.15rem; }
+    .brand small { display:block; color:#c6d2d9; font-weight:500; letter-spacing:.04em; font-size:.68rem; margin-top:2px; }
+    nav { display:flex; gap:22px; flex-wrap:wrap; }
+    nav a { text-decoration:none; font-size:.92rem; color:#eef4f7; }
+    nav a:hover { color:var(--gold); }
+    .hero { color:white; background:linear-gradient(110deg, rgba(12,31,43,.96), rgba(20,43,58,.78)), url('https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1800&q=85') center/cover; }
+    .hero-inner { padding:100px 0 94px; max-width:760px; }
+    .eyebrow { color:var(--gold); font-weight:700; letter-spacing:.15em; text-transform:uppercase; font-size:.82rem; }
+    h1 { font-size:clamp(2.4rem, 5vw, 4.5rem); line-height:1.08; margin:15px 0 20px; }
+    .hero p { font-size:1.15rem; color:#e0e8ed; max-width:650px; }
+    .btn { display:inline-block; margin:14px 10px 0 0; padding:12px 20px; border-radius:5px; text-decoration:none; font-weight:700; }
+    .btn-gold { background:var(--gold); color:#172d3b; }
+    .btn-outline { border:1px solid #dbe5ea; color:white; }
+    section { padding:72px 0; }
+    .section-head { max-width:700px; margin-bottom:32px; }
+    h2 { color:var(--navy); font-size:clamp(1.8rem, 3vw, 2.5rem); line-height:1.2; margin:0 0 12px; }
+    .section-head p, .muted { color:var(--muted); }
+    .about-grid { display:grid; grid-template-columns:1.1fr .9fr; gap:40px; align-items:center; }
+    .about-panel { background:var(--cream); border-left:5px solid var(--gold); padding:26px; border-radius:8px; }
+    .products { background:var(--cream); }
+    .cards { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+    .card { background:white; border:1px solid #e3e9ec; border-radius:9px; padding:24px; box-shadow:0 6px 20px #142b3a08; }
+    .card .num { color:#ad791c; font-size:.82rem; font-weight:800; letter-spacing:.1em; }
+    .card h3 { margin:8px 0; color:var(--navy); }
+    .card p { margin:0; color:var(--muted); font-size:.96rem; }
+    .industries { display:flex; gap:10px; flex-wrap:wrap; }
+    .pill { background:#edf2f4; border-radius:30px; padding:10px 15px; font-size:.94rem; }
+    .contact { background:var(--navy); color:white; }
+    .contact h2 { color:white; }
+    .contact .section-head p { color:#c9d5dc; }
+    .contact-grid { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+    .contact-item { border:1px solid #496170; padding:20px; border-radius:8px; overflow-wrap:anywhere; }
+    .contact-item strong { display:block; color:var(--gold); margin-bottom:6px; }
+    .contact a { color:white; }
+    footer { background:#0d202b; color:#c3cfd6; text-align:center; padding:22px 0; font-size:.88rem; }
+    @media(max-width:760px) {
+      .nav { padding:14px 0; align-items:flex-start; flex-direction:column; }
+      nav { gap:12px 18px; }
+      .hero-inner { padding:72px 0; }
+      .about-grid,.contact-grid { grid-template-columns:1fr; }
+      .cards { grid-template-columns:1fr 1fr; }
+      section { padding:54px 0; }
+    }
+    @media(max-width:480px) { .cards { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <div class="brand">ASPIRE ENTERPRISES<small>INDUSTRIAL LUBRICANTS & METALWORKING FLUID SOLUTIONS</small></div>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a><a href="#products">Products</a><a href="#industries">Industries</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="eyebrow">Industrial Lubricants & Metalworking Fluids</div>
+      <h1>Lubricating Performance.<br>Driving Excellence.</h1>
+      <p>Product supply and sourcing support for metalworking fluids, industrial lubricants and related maintenance requirements.</p>
+      <a class="btn btn-gold" href="#products">Explore Product Range</a>
+      <a class="btn btn-outline" href="#contact">Contact Our Team</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container about-grid">
+      <div>
+        <div class="eyebrow">About us</div>
+        <h2>A dependable supply partner for industrial requirements</h2>
+        <p>Aspire Enterprises is an industrial lubricant trading and supply business focused on metalworking fluids, industrial lubricants and related maintenance products for manufacturing customers.</p>
+        <p>We aim to understand each customer's machining processes, materials, equipment and operating conditions, then coordinate product availability and supplier guidance to support informed product selection.</p>
+      </div>
+      <div class="about-panel">
+        <h3>Our approach</h3>
+        <p>✓ Requirement-led product discussions</p>
+        <p>✓ Supply and delivery coordination</p>
+        <p>✓ Supplier coordination for technical information</p>
+        <p>✓ Responsive communication and follow-up</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="products" id="products">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">Product range</div>
+        <h2>Industrial products for a range of applications</h2>
+        <p>Product suitability and availability should be confirmed against the relevant technical data sheet, supplier guidance and customer specifications.</p>
+      </div>
+      <div class="cards">
+        <article class="card"><div class="num">01</div><h3>Water-Soluble Cutting Fluids</h3><p>Coolant and lubrication solutions for selected machining, grinding and turning operations.</p></article>
+        <article class="card"><div class="num">02</div><h3>Neat Cutting Oils</h3><p>Oil-based fluids for broaching, tapping, drilling, gear cutting and specialised machining.</p></article>
+        <article class="card"><div class="num">03</div><h3>Hydraulic Oils</h3><p>Industrial hydraulic lubrication options in equipment-specified grades.</p></article>
+        <article class="card"><div class="num">04</div><h3>Spindle & Gear Oils</h3><p>Lubricants selected according to equipment requirements and specified viscosity grades.</p></article>
+        <article class="card"><div class="num">05</div><h3>Rust Preventives & Removers</h3><p>Solutions for temporary corrosion protection and rust removal, subject to application requirements.</p></article>
+        <article class="card"><div class="num">06</div><h3>Industrial Cleaners</h3><p>Cleaning products for selected oils, grease, dirt and manufacturing maintenance needs.</p></article>
+        <article class="card"><div class="num">07</div><h3>Specialty Lubricants</h3><p>Products for drawing, forming, stamping, punching and other specialised processes.</p></article>
+        <article class="card"><div class="num">08</div><h3>Quenching & EDM Fluids</h3><p>Application-specific fluids for heat treatment and electrical-discharge machining.</p></article>
+        <article class="card"><div class="num">09</div><h3>MPI & VCI Solutions</h3><p>Products for magnetic-particle inspection and corrosion protection during storage or shipment.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="industries">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">Industries we can support</div>
+        <h2>Serving manufacturing and engineering requirements</h2>
+        <p>Potential customer segments include businesses whose operations use machining fluids, industrial oils, cleaning products or corrosion-protection solutions.</p>
+      </div>
+      <div class="industries">
+        <span class="pill">CNC / VMC Machining</span><span class="pill">Automotive Components</span>
+        <span class="pill">Precision Engineering</span><span class="pill">Gear Manufacturing</span>
+        <span class="pill">Pump & Valve Manufacturing</span><span class="pill">Metal Fabrication</span>
+        <span class="pill">Heat Treatment</span><span class="pill">Storage & Dispatch</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">Get in touch</div>
+        <h2>Let's discuss your lubrication requirements</h2>
+        <p>Contact Aspire Enterprises for product enquiries and supply coordination.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-item"><strong>Contact Person</strong>Ms. Supriya Amrale</div>
+        <div class="contact-item"><strong>Mobile</strong><a href="tel:+917741017152">+91 7741017152</a><br><a href="tel:+918421968738">+91 8421968738</a></div>
+        <div class="contact-item"><strong>Email</strong><a href="mailto:Aspire.enterprises30@gmail.com">Aspire.enterprises30@gmail.com</a></div>
+        <div class="contact-item"><strong>Business Address</strong>Milkat No. 260/2, Gogawale Heights, Sasewadi Phata, Pune–Bangalore Highway, Pune, Maharashtra – 412205</div>
+      </div>
+      <p style="margin-top:24px"><a class="btn btn-gold" href="mailto:Aspire.enterprises30@gmail.com?subject=Product%20Enquiry%20-%20Aspire%20Enterprises">Send an Enquiry</a></p>
+    </div>
+  </section>
+</main>
+<footer><div class="container">© <span id="year"></span> Aspire Enterprises. All rights reserved.</div></footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
